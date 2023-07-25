@@ -42,8 +42,8 @@ To set up Vlab Solutions on your local machine, follow the steps below.
 
 1. Clone the repository:
 ```
-git clone https://github.com/your-username/vlab-solutions.git
-cd vlab-solutions
+git clone https://github.com/your-username/vlabsolutions.git
+cd vlabsolutions
 ```
 
 2. Install frontend and backend dependencies.
