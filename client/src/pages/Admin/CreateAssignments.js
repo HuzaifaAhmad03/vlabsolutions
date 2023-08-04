@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Layout from '../../components/Layouts/Layout';
 import { useAuth } from '../../context/auth';
 import axios from 'axios';
+import toast from 'react-hot-toast';
 
 const CreateAssignments = () => {
   const [auth] = useAuth();
@@ -28,6 +29,7 @@ const CreateAssignments = () => {
       .post('/api/v1/auth/create-assignment/', formData)
       .then((response) => {
         console.log(response.data);
+        toast.success("Assignment created successfully!");
       })
       .catch((error) => {
         console.error('Error in Axios POST request:', error);
